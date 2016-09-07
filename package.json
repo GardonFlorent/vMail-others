@@ -1,0 +1,22 @@
+{
+  "name": "vMail-RESTful",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "api-easy": "latest",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "express": "~4.13.4",
+    "install": "^0.8.1",
+    "mongoose": "^4.5.9",
+    "morgan": "~1.7.0",
+    "npm": "^3.10.6",
+    "redis": "latest",
+    "serve-favicon": "~2.3.0"
+  }
+}

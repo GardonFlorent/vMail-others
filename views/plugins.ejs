@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 style="text-align: center"><%= title %></h1>
+    <ul>
+
+      <% plugins.forEach(function (plugin, index, plugins) { %>
+      ---------------------------------------------------------
+        <li><h2><%= plugin.name %></h2></li>
+        <h3><%= plugin.registryName %></h3>
+        <p style="color: gray">
+          by <%= plugin.author %>
+        </p>
+        <p style="color: red">
+          Depend on: <%= plugin.dependOn %>
+        </p>
+      <%}) %>
+    </ul>
+  </body>
+</html>
