@@ -15,4 +15,9 @@ import java.lang.annotation.Target;
 public @interface Plugin {
     PluginType type();
     String dependOn() default "";
+    String registryName();
+    String name() default "N/A";
+    String author() default "N/A";
+    String version() default "N/A";
+    String creationDate() default "N/A";
 }
